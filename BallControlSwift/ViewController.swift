@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        
         coordinator.animate(alongsideTransition: { context in
             self.locationDictionary = ["x": self.location.x, "y": self.location.y]
             self.animate(self.locationDictionary as Any)
@@ -44,7 +43,6 @@ class ViewController: UIViewController {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if (imageMoveEnabled!) {
-            
             let touch = touches.first!
             location = touch.location(in: self.view)
             
@@ -109,7 +107,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func animate(_ sender: Any) {
-        
         locationDictionary = sender as? [String : CGFloat]
         let locationX = locationDictionary!["x"]
         let locationY = locationDictionary!["y"]

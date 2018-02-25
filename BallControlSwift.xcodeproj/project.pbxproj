@@ -12,7 +12,6 @@
 		5E10E9FA203FED1800437541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E10E9F8203FED1800437541 /* Main.storyboard */; };
 		5E10E9FC203FED1800437541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E10E9FB203FED1800437541 /* Assets.xcassets */; };
 		5E10E9FF203FED1800437541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E10E9FD203FED1800437541 /* LaunchScreen.storyboard */; };
-		5EE77ECBFA4F9F824187B24E /* Pods_BallControlSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96A595C7AF9419BDCF322C4 /* Pods_BallControlSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EE77ECBFA4F9F824187B24E /* Pods_BallControlSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,13 +346,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73FSJC7BUF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BallControlSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib/backendless",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.backendless.BallControlSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
@@ -368,13 +363,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73FSJC7BUF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BallControlSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib/backendless",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.backendless.BallControlSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
