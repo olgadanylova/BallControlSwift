@@ -47,19 +47,19 @@ class ViewController: UIViewController {
             location = touch.location(in: self.view)
             
             let statusBarHeigth = UIApplication.shared.statusBarFrame.size.height
-            let navBarHeight = navigationController?.navigationBar.frame.height
+            let navBarHeight = navigationController?.navigationBar.frame.size.height
             
-            if (location.x - imageView.frame.width / 2 <= view.frame.minX) {
-                location.x = imageView.frame.width / 2
+            if (location.x - imageView.frame.size.width / 2 <= view.frame.minX) {
+                location.x = imageView.frame.size.width / 2
             }
-            if (location.x + imageView.frame.width / 2 >= view.frame.maxX) {
-                location.x = view.frame.maxX - imageView.frame.width / 2
+            if (location.x + imageView.frame.size.width / 2 >= view.frame.maxX) {
+                location.x = view.frame.maxX - imageView.frame.size.width / 2
             }
-            if (location.y - imageView.frame.height / 2 <= statusBarHeigth + navBarHeight!) {
-                location.y = statusBarHeigth + navBarHeight! + imageView.frame.height / 2
+            if (location.y - imageView.frame.size.height / 2 <= statusBarHeigth + navBarHeight!) {
+                location.y = statusBarHeigth + navBarHeight! + imageView.frame.size.height / 2
             }
-            if (location.y + imageView.frame.height / 2 >= view.frame.maxY) {
-                location.y = view.frame.maxY - imageView.frame.height / 2
+            if (location.y + imageView.frame.size.height / 2 >= view.frame.maxY) {
+                location.y = view.frame.maxY - imageView.frame.size.height / 2
             }
             
             imageView.center = location
