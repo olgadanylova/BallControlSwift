@@ -7,14 +7,15 @@ class ViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var textView: UITextView!
     
-    var location = CGPoint.init(x: 0, y: 0)
-    var locationDictionary: [String : CGFloat]?
-    var sharedObject: SharedObject?
-    var imageMoveEnabled: Bool?
+    private var location = CGPoint.init(x: 0, y: 0)
+    private var locationDictionary: [String : CGFloat]?
+    private var sharedObject: SharedObject?
+    private var imageMoveEnabled: Bool?
     
-    let backendless = Backendless.sharedInstance()!
-    let APP_ID = "A81AB58A-FC85-EF00-FFE4-1A1C0FEADB00"
-    let API_KEY = "FE202648-517E-B0A5-FF89-CBA9D7DFDD00"
+    private let backendless = Backendless.sharedInstance()!
+    private let HOST_URL = "http://apitest.backendless.com"
+    private let APP_ID = "A81AB58A-FC85-EF00-FFE4-1A1C0FEADB00"
+    private let API_KEY = "FE202648-517E-B0A5-FF89-CBA9D7DFDD00"
     
     override func viewDidLoad() {
         super.viewDidLoad()
