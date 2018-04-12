@@ -81,18 +81,19 @@ class ViewController: UIViewController {
         
         backendless.rt.addConnectErrorEventListener({ connectError in
             self.sharedObject = self.backendless.sharedObject.connect("BallObject")
-            self.navigationItem.title = "Status: connection failed: \(connectError!)"
+            print("Status: connection failed: \(connectError!)")
             self.connectButton.isEnabled = false
         })
         
         backendless.rt.addDisonnectEventListener({ disconnectReason in
             self.sharedObject = self.backendless.sharedObject.connect("BallObject")
+            print
             self.navigationItem.title = "Status: disconnected: \(disconnectReason!)"
             self.connectButton.isEnabled = false
         })
         
         backendless.rt.addReconnectAttemptEventListener({ reconnectAttempt in
-            self.navigationItem.title = "Status: trying to connect"
+            print("Status: trying to connect")
         })
     }
     
