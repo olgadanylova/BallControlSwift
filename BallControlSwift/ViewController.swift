@@ -75,6 +75,7 @@ class ViewController: UIViewController {
             self.showErrorAlert(fault!.message)
         })
         addRTListeners()
+        addOnChangesListener()
     }
     
     func calculateCoefficients() {
