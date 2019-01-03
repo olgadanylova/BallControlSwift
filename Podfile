@@ -6,6 +6,6 @@ target 'BallControlSwift' do
   use_frameworks!
 
   # Pods for BallControlSwift
-pod 'Socket.IO-Client-Swift'
+pod 'Backendless'
 
 end
