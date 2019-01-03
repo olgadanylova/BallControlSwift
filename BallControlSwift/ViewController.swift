@@ -11,9 +11,9 @@ class ViewController: UIViewController {
     private let LOCATION_COEFITIENTS = "LocationCoeficients"
     
     private let backendless = Backendless.sharedInstance()!
-    private let HOST_URL = "http://apitest.backendless.com"
-    private let APP_ID = "A81AB58A-FC85-EF00-FFE4-1A1C0FEADB00"
-    private let API_KEY = "FE202648-517E-B0A5-FF89-CBA9D7DFDD00"
+    private let HOST_URL = "http://api.backendless.com"
+    private let APP_ID = "YOUR APP ID"
+    private let API_KEY = "YOUR API KEY
     
     private var statusBarHeight: CGFloat = 0
     private var navigationBarHeight: CGFloat = 0
