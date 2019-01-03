@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     private let backendless = Backendless.sharedInstance()!
     private let HOST_URL = "http://api.backendless.com"
     private let APP_ID = "YOUR APP ID"
-    private let API_KEY = "YOUR API KEY
+    private let API_KEY = "YOUR API KEY"
     
     private var statusBarHeight: CGFloat = 0
     private var navigationBarHeight: CGFloat = 0
